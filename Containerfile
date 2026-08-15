@@ -12,7 +12,7 @@ LABEL org.opencontainers.image.source="https://github.com/Containerpak/anydesk"
 COPY --from=source /out /opt/anydesk
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ca-certificates libnss3 xdg-utils && \
+    apt-get install -y --no-install-recommends ca-certificates libnss3 libpolkit-gobject-1-0 xdg-utils && \
     ln -sf /opt/anydesk/anydesk /usr/bin/anydesk && \
     cpak-clean-junk
 
