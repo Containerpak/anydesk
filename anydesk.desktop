@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=AnyDesk
+Comment=Connect to remote computers and provide remote support.
+Exec=anydesk
+Icon=anydesk
+Terminal=false
+Categories=Network;RemoteAccess;
