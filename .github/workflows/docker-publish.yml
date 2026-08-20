@@ -50,7 +50,7 @@ jobs:
           provenance: mode=max
           sbom: true
       - name: Verify package
-        run: docker run --rm ghcr.io/containerpak/anydesk:main sh -c 'test -x /usr/bin/anydesk && test -f /usr/share/applications/anydesk.desktop'
+        run: docker run --rm ghcr.io/containerpak/anydesk:main sh -c 'test ! -e /usr/bin/anydesk && test ! -e /usr/share/applications/anydesk.desktop'
       - name: Publish summary
         run: echo "ghcr.io/containerpak/anydesk@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
 

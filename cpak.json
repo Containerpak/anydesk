@@ -5,6 +5,16 @@
   "description": "Connect to remote computers and provide remote support.",
   "version": "8.0.3",
   "image": "ghcr.io/containerpak/anydesk:main",
+  "runtime_sources": [
+    {
+      "name": "anydesk_8.0.3-1_amd64.deb",
+      "url": "https://download.anydesk.com/linux/anydesk_8.0.3-1_amd64.deb",
+      "sha256": "a9cb4864eecf2a9d8b9e1cb3a152d25a90a5c86045279be3edd6c35264a52fb0",
+      "size": 16386576,
+      "installer": "deb-extract",
+      "architecture": "amd64"
+    }
+  ],
   "binaries": [
     "/usr/bin/anydesk"
   ],
