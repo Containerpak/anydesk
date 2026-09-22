@@ -4,7 +4,7 @@
   "name": "AnyDesk",
   "description": "Connect to remote computers and provide remote support.",
   "version": "8.0.4",
-  "image": "ghcr.io/containerpak/anydesk@sha256:3ea1746ba1aba2a6608bd950f3f77fd8079732e573854db660c495313d55d187",
+  "image": "ghcr.io/containerpak/anydesk@sha256:75791c2ccec06107212c80af7a7d3bf925e597bf996d22aa90d7402db17fa56f",
   "runtime_sources": [
     {
       "name": "anydesk_8.0.4_amd64.deb",
